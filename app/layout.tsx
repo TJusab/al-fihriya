@@ -7,20 +7,20 @@ import { ReactNode } from "react";
 import { SessionProvider } from "next-auth/react";
 import { auth } from "@/auth";
 
-const ibmPlexSans = localFont({
+const lora = localFont({
   src: [
-    { path: "/fonts/IBMPlexSans-Regular.ttf", weight: "400", style: "normal" },
-    { path: "/fonts/IBMPlexSans-Medium.ttf", weight: "500", style: "normal" },
-    { path: "/fonts/IBMPlexSans-SemiBold.ttf", weight: "600", style: "normal" },
-    { path: "/fonts/IBMPlexSans-Bold.ttf", weight: "700", style: "normal" },
+    { path: "/fonts/Lora-VariableFont_wght.ttf", weight: "400 700", style: "normal" },
+    { path: "/fonts/Lora-Italic-VariableFont_wght.ttf", weight: "400 700", style: "italic" },
   ],
+  variable: "--lora",
 });
 
-const bebasNeue = localFont({
+const amiri = localFont({
   src: [
-    { path: "/fonts/BebasNeue-Regular.ttf", weight: "400", style: "normal" },
+    { path: "/fonts/Amiri-Regular.ttf", weight: "400", style: "normal" },
+    { path: "/fonts/Amiri-Bold.ttf", weight: "700", style: "normal" },
   ],
-  variable: "--bebas-neue",
+  variable: "--amiri",
 });
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
     <html lang="en">
       <SessionProvider session={session}>
         <body
-          className={`${ibmPlexSans.className} ${bebasNeue.variable} antialiased`}
+          className={`${lora.className} ${amiri.variable} antialiased`}
         >
           {children}
 
