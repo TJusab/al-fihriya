@@ -66,8 +66,8 @@ const FileUpload = ({
       variant === "dark"
         ? "bg-dark-300"
         : "bg-light-600 border-gray-100 border",
-    placeholder: variant === "dark" ? "text-light-100" : "text-slate-500",
-    text: variant === "dark" ? "text-light-100" : "text-dark-400",
+    placeholder: variant === "dark" ? "text-dark-100" : "text-slate-500",
+    text: variant === "dark" ? "text-dark-100" : "text-dark-400",
   };
 
   const onError = (error: any) => {
