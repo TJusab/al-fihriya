@@ -24,10 +24,6 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        // primary: {
-        //   DEFAULT: "hsl(var(--primary))",
-        //   foreground: "hsl(var(--primary-foreground))",
-        // },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -54,48 +50,55 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        // Desert sand and warm beiges
         primary: {
-          DEFAULT: "#E7C9A5",
-          admin: "#25388C",
+          DEFAULT: "#E5D4B8", // Warm desert sand
+          admin: "#8B6B47", // Rich desert brown
         },
+        // Turquoise/Teal (mosque tile colors)
         green: {
-          DEFAULT: "#027A48",
-          100: "#ECFDF3",
-          400: "#4C7B62",
-          500: "#2CC171",
-          800: "#027A48",
+          DEFAULT: "#1B998B", // Vibrant turquoise
+          100: "#E6F7F5", // Very light turquoise
+          400: "#45B5A8", // Medium turquoise
+          500: "#20B2AA", // Light sea green
+          800: "#0D7C72", // Deep teal
         },
+        // Desert rose and terracotta
         red: {
-          DEFAULT: "#EF3A4B",
-          400: "#F46F70",
-          500: "#E27233",
-          800: "#EF3A4B",
+          DEFAULT: "#D4A5A5", // Soft desert rose
+          400: "#E8B4A8", // Light terracotta
+          500: "#C97B63", // Burnt terracotta
+          800: "#B85C4F", // Deep terracotta
         },
+        // Sky blue accent
         blue: {
-          100: "#0089F1",
+          100: "#5AB9EA", // Desert sky blue
         },
+        // Light warm neutrals
         light: {
-          100: "#D6E0FF",
-          200: "#EED1AC",
-          300: "#F8F8FF",
-          400: "#EDF1F1",
-          500: "#8D8D8D",
-          600: "#F9FAFB",
-          700: "#E2E8F0",
-          800: "#F8FAFC",
+          100: "#F5EFE7", // Cream
+          200: "#F0E5D8", // Light sand
+          300: "#FAF7F2", // Off-white
+          400: "#EDE6DC", // Pale beige
+          500: "#C4B5A0", // Medium sand
+          600: "#FBF8F3", // Almost white
+          700: "#E8DFD0", // Light tan
+          800: "#F7F3EE", // Warm white
         },
+        // Dark warm neutrals
         dark: {
-          100: "#16191E",
-          200: "#3A354E",
-          300: "#232839",
-          400: "#1E293B",
-          500: "#0F172A",
-          600: "#333C5C",
-          700: "#464F6F",
-          800: "#1E2230",
+          100: "#3D3227", // Dark brown
+          200: "#5C4A3A", // Warm dark brown
+          300: "#4A3F35", // Deep earth
+          400: "#3E352B", // Rich brown
+          500: "#2B241F", // Almost black brown
+          600: "#6B5647", // Medium brown
+          700: "#7D6B59", // Light brown
+          800: "#352D25", // Very dark brown
         },
+        // Neutral grays with warm tones
         gray: {
-          100: "#CBD5E1",
+          100: "#D4CFC5", // Warm light gray
         },
       },
       screens: {
@@ -107,7 +110,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        pattern: "url('/images/pattern.webp')",
+        pattern: "url('/images/concrete-surface-background.jpg')",
       },
     },
   },
