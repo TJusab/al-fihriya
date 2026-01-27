@@ -30,7 +30,6 @@ interface BookParams {
   coverColor: string;
   description: string;
   totalCopies: number;
-  videoUrl: string;
   summary: string;
 }
 
